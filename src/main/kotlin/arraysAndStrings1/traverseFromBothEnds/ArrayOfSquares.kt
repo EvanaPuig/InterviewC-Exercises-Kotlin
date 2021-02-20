@@ -1,5 +1,8 @@
 package arraysAndStrings1.traverseFromBothEnds
 
+import java.lang.Math.pow
+import kotlin.math.pow
+
 /*
 Statement: Given a sorted array in non-decreasing order, return an array of squares of each number, also in non-decreasing order.
 For example:
@@ -23,14 +26,23 @@ class ArrayOfSquares {
         var start = 0
         var end = a.size - 1
 
-        var result = arrayOf<Int>()
-        var resultIndex = result.size - 1
+        val result = IntArray(a.size)
+        var resultIndex = a.size - 1
 
         while(start <= end) {
-
+            val startAbs = kotlin.math.abs(a[start])
+            val endAbs = kotlin.math.abs(a[end])
+            if( startAbs > endAbs) {
+                result[resultIndex] = startAbs.toDouble().pow(2.0).toInt()
+                start++
+            } else {
+                result[resultIndex] = endAbs.toDouble().pow(2.0).toInt()
+                end--
+            }
+            resultIndex--
         }
 
-        return a
+        return result.toTypedArray()
     }
 }
 
@@ -67,12 +79,12 @@ fun main() {
     println("Regular Case: Array with only positives: ${result?.joinToString(", ")}")
 
     // 6. Only negative
-    val onlyNegativesArray = arrayOf(-3, -7, -5, -9, -11)
+    val onlyNegativesArray = arrayOf(-11, -9, -7, -5, -3)
     result = instance.arrayOfSquares(onlyNegativesArray)
     println("Regular Case: Array with only negatives: ${result?.joinToString(", ")}")
 
     // 7. Both positive and negative
-    val normalArray = arrayOf(2, 4, -8, 6, -12, -1)
+    val normalArray = arrayOf(-12, -8, -1, 2, 4, 6)
     result = instance.arrayOfSquares(normalArray)
     println("Regular Case: Normal array: ${result?.joinToString(", ")}")
 }
