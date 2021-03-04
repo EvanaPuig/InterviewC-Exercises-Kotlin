@@ -13,6 +13,10 @@ Questions to Clarify with interviewer:
  */
 
 class BaseCase {
+    /*
+    Time Complexity: O(n) aka linear time
+    Space Complexity: O(1) aka constant space
+     */
     fun cloneEvenNumbers(a: Array<Int>?): Array<Int>? {
         if(a.isNullOrEmpty())
             return a
@@ -21,9 +25,8 @@ class BaseCase {
         var lastNumberIndex = getLastNumberIndex(a)
 
         while (lastNumberIndex >= 0) {
-            if ( a[lastNumberIndex] % 2 == 0) {
+            if ( a[lastNumberIndex] % 2 == 0)
                 a[--end] = a[lastNumberIndex]
-            }
             a[--end] = a[lastNumberIndex]
             lastNumberIndex--
         }
@@ -33,9 +36,9 @@ class BaseCase {
 
     private fun getLastNumberIndex(a: Array<Int>): Int {
         var lastIndex = a.size - 1
-        while (lastIndex >= 0 && a[lastIndex] == -1) {
+        while (lastIndex >= 0 && a[lastIndex] == -1)
             lastIndex--
-        }
+
         return lastIndex
     }
 }

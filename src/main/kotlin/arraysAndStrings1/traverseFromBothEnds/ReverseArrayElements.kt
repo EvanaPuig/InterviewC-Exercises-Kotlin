@@ -10,6 +10,10 @@ Questions to Clarify with the Interviewer:
  */
 
 class ReverseArrayElements {
+    /*
+    Time Complexity: O(n)
+    Space Complexity: O(1)
+     */
     fun reverseArray(a: Array<Int>?): Array<Int>? {
         if(a.isNullOrEmpty())
             return a

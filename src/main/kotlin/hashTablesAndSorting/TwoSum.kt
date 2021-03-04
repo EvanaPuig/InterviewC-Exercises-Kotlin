@@ -21,13 +21,13 @@ class TwoSum {
     // O(n^2) time * tradeoff *
     // O(1) space * Optimal *
     fun twoSumBruteForce(a: Array<Int>?, target: Int) : Pair<Int, Int>? {
-        a?.let {
-            for ( i in a.indices - 1) {
-                for(j in a.indices) {
-                    if( a[i] + a[j] == target) {
-                        return Pair(a[i], a[j])
-                    }
-                }
+        if (a.isNullOrEmpty())
+            return null
+
+        for ( i in a.indices - 1) {
+            for(j in a.indices) {
+                if( a[i] + a[j] == target)
+                    return Pair(a[i], a[j])
             }
         }
         return null
@@ -37,19 +37,19 @@ class TwoSum {
     // O(n) time * Optimal *
     // O(n) space * tradeoff *
     fun twoSumHashTable(a: Array<Int>?, target: Int) : Pair<Int, Int>? {
+        if (a.isNullOrEmpty())
+            return null
+
         val hashSet = hashSetOf<Int>()
-        a?.let {
-            for (i in a.indices) {
-                if(hashSet.contains(target - a[i])) {
-                    return Pair(target - a[i], a[i])
-                } else {
-                    hashSet.add(a[i])
-                }
-            }
+
+        for (i in a.indices) {
+            if(hashSet.contains(target - a[i]))
+                return Pair(target - a[i], a[i])
+            hashSet.add(a[i])
         }
+
         return null
     }
-
 }
 
 fun main() {
