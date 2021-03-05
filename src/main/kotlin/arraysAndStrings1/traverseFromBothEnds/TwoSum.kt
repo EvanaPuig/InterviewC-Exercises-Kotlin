@@ -1,7 +1,8 @@
 package arraysAndStrings1.traverseFromBothEnds
 
 /*
-Statement: Two Sum Problem - Find 2 numbers in a sorted array that sum to X. For example, if  A = [1,2,3,4,5] and X= 9, the numbers are 4 and 5.
+Statement: Two Sum Problem - Find 2 numbers in a sorted array that sum to X.
+For example, if  A = [1,2,3,4,5] and X= 9, the numbers are 4 and 5.
 Level: Easy
 
 Questions to Clarify with the Interviewer:
@@ -20,6 +21,8 @@ Questions to Clarify with the Interviewer:
  */
 
 class TwoSum {
+    // TimeComplexity: O(n)
+    // Space Complexity: O(1)
     fun twoSum(a: Array<Int>?, result: Int): Pair<Int, Int>? {
         if(a.isNullOrEmpty())
             return null

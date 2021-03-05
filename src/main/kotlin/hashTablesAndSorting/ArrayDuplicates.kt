@@ -10,13 +10,13 @@ class ArrayDuplicates {
     // O(1) space
     // O(n^2) time
     fun findArrayDuplicates(a: Array<Int>?): Int? {
-        a?.let {
-            for (i in 0 until (it.size)) {
-                for (j in (i+1) until (a.size)) {
-                    if (a[i] == a[j]) {
-                        return a[i]
-                    }
-                }
+        if (a.isNullOrEmpty())
+            return null
+
+        for (i in a.indices) {
+            for (j in i+1 until a.size - 2) {
+                if (a[i] == a[j])
+                    return a[i]
             }
         }
         return null
@@ -26,13 +26,13 @@ class ArrayDuplicates {
     // O(1) space * Optimal *
     // O(n log n) time because of sorting * tradeoff *
     fun findArrayDuplicatesSorting(a: Array<Int>?): Int? {
-        a?.let {
-            a.sort()
-            for (i in 0..a.size - 2) {
-                if (a[i] ==  a[i+1]) {
-                    return a[i]
-                }
-            }
+        if (a.isNullOrEmpty())
+            return null
+
+        a.sort()
+        for (i in 0..a.size - 2) {
+            if (a[i] ==  a[i+1])
+                return a[i]
         }
         return null
     }
@@ -41,16 +41,17 @@ class ArrayDuplicates {
     // O(n) space * tradeoff *
     // O(n) time * Optimal *
     fun findArrayDuplicatesHashTable(a: Array<Int>?): Int? {
+        if (a.isNullOrEmpty())
+            return null
+
         val hashMap = hashSetOf<Int>()
 
-        a?.let {
-            for (item in a) {
-                if (hashMap.contains(item)) {
-                    return item
-                }
-                hashMap.add(item)
-            }
+        for (item in a) {
+            if (hashMap.contains(item))
+                return item
+            hashMap.add(item)
         }
+
         return null
     }
 }
@@ -85,7 +86,7 @@ fun main() {
     println("Brute Force Two elements same array: ${instance.findArrayDuplicates(twoElementsArraySameSample)}")
 
     // 6. Regular Case with duplicates
-    val sample1 = arrayOf(7, 5, 2, 1, 0, 2, 3)
+    val sample1 = arrayOf(7, 5, 2, 1, 0, 2, 3, 5)
 
     println("Brute Force Regular Case with duplicates: ${instance.findArrayDuplicates(sample1)}")
 
