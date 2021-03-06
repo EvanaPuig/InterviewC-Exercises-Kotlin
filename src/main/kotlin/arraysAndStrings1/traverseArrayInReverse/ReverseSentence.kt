@@ -20,6 +20,10 @@ A. Yes, you can allocate a new String. Limit the space complexity to O(n).
  */
 
 class ReverseSentence {
+    /*
+    Time Complexity: O(n)
+    Space Complexity: O(n)
+     */
     fun reverseWords(s: String?): String? {
         if (s.isNullOrEmpty())
             return s
@@ -37,8 +41,10 @@ class ReverseSentence {
         }
         // add first word
         val firstWord = s.substring(0, currentWordEnd)
-        if (builder.isNotEmpty()) builder.append(' ')
+        if (builder.isNotEmpty())
+            builder.append(' ')
         builder.append(firstWord)
+
         return builder.toString()
     }
 }

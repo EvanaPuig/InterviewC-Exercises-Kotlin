@@ -14,6 +14,10 @@ A. Keep the array as it is.
  */
 
 class ZeroesAtTheEnd {
+    /*
+    Time Complexity: O(n)
+    Space Complexity: O(1)
+     */
     fun moveZeroesToEnd(a: Array<Int>?): Array<Int>? {
         if (a.isNullOrEmpty())
             return a
