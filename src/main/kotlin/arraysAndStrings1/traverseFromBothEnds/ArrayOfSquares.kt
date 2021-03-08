@@ -1,7 +1,7 @@
 package arraysAndStrings1.traverseFromBothEnds
 
-import java.lang.Math.pow
 import kotlin.math.pow
+import kotlin.math.abs
 
 /*
 Statement: Given a sorted array in non-decreasing order, return an array of squares of each number, also in non-decreasing order.
@@ -19,6 +19,10 @@ Questions to Clarify:
  */
 
 class ArrayOfSquares {
+    /*
+    Time Complexity: O(n)
+    Space Complexity: O(n)
+     */
     fun arrayOfSquares(a: Array<Int>?): Array<Int>? {
         if (a.isNullOrEmpty())
             return a
@@ -30,8 +34,8 @@ class ArrayOfSquares {
         var resultIndex = a.size - 1
 
         while(start <= end) {
-            val startAbs = kotlin.math.abs(a[start])
-            val endAbs = kotlin.math.abs(a[end])
+            val startAbs = abs(a[start])
+            val endAbs = abs(a[end])
             if( startAbs > endAbs) {
                 result[resultIndex] = startAbs.toDouble().pow(2.0).toInt()
                 start++

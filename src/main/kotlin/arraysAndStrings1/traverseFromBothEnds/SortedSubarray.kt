@@ -11,6 +11,10 @@ Questions to Clarify:
  */
 
 class SortedSubarray {
+    /*
+    Time Complexity: O(n)
+    Space Complexity: O(1)
+     */
     fun sortedSubarrayToSortAllArray(a: Array<Int>?): Pair<Int, Int>? {
         if(a.isNullOrEmpty())
             return null
