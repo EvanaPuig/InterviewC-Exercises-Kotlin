@@ -1,4 +1,4 @@
-package arraysAndStrings1.traverseFromBothEnds
+package ch1ArraysAndStrings1.traverseFromBothEnds
 
 /*
 Statement: Given an array of integers, find the continuous subarray, which when sorted, results in the entire array being sorted.
@@ -61,6 +61,13 @@ class SortedSubarray {
 }
 
 fun main() {
+    /*
+    Test Cases:
+    Edge Cases: empty array, null array
+    Base Case: one element, 2 elements (sorted and unsorted)
+    Regular Case: array already sorted, unsorted portion at beginning/end etc.
+     */
+
     val instance = SortedSubarray()
     var result: Pair<Int, Int>?
 

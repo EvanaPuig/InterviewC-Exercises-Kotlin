@@ -1,4 +1,4 @@
-package arraysAndStrings1.traverseFromBothEnds
+package ch1ArraysAndStrings1.traverseFromBothEnds
 
 import kotlin.math.pow
 import kotlin.math.abs
@@ -51,6 +51,13 @@ class ArrayOfSquares {
 }
 
 fun main() {
+    /*
+    Test Cases:
+    Edge Cases: Empty array, null array
+    Base Cases: single element (+ve/-ve)
+    Regular Case: only +ve elements, only -ve elements, both +ve/-ve
+     */
+
     val instance = ArrayOfSquares()
     var result: Array<Int>?
 

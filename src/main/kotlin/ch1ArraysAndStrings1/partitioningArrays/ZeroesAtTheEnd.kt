@@ -1,4 +1,4 @@
-package arraysAndStrings1.partitioningArrays
+package ch1ArraysAndStrings1.partitioningArrays
 
 /*
 Statement: given an array of integers. Rearrange the array so that all zeroes are at the end of the array.
@@ -42,6 +42,12 @@ class ZeroesAtTheEnd {
 }
 
 fun main() {
+    /*
+    Test Cases:
+    Edge Cases: empty array, null array
+    Base Cases: single element (0/non-0), 2 elements
+    Regular Cases: more than 2 elements, 0 already at end, etc.
+     */
     val instance = ZeroesAtTheEnd()
     var result: Array<Int>?
 

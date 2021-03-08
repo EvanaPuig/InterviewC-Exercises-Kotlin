@@ -1,4 +1,4 @@
-package hashTablesAndSorting
+package ch0hashTablesAndSorting
 
 /*
 Find duplicates in an Array of Integers

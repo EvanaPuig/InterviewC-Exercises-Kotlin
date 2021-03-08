@@ -1,4 +1,4 @@
-package arraysAndStrings1.traverseArrayInReverse
+package ch1ArraysAndStrings1.traverseArrayInReverse
 
 /*
 Statement: Given an array of numbers, replace each even number with two of the same number. e.g, [1,2,5,6,8] -> [1,2,2,5,6,6,8,8]. Assume that the array has enough space to accommodate the result.
@@ -44,6 +44,13 @@ class BaseCase {
 }
 
 fun main() {
+    /*
+    Test Cases:
+    Corner Cases - null, empty array, array with only blanks
+    Base Cases - one odd number, one even number
+    Regular Cases - only odd numbers, only even numbers, both odd and even numbers
+     */
+
     val instance = BaseCase()
     var result: Array<Int>?
 

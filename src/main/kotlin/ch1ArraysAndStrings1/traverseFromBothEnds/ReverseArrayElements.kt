@@ -1,4 +1,4 @@
-package arraysAndStrings1.traverseFromBothEnds
+package ch1ArraysAndStrings1.traverseFromBothEnds
 
 /*
 Statement: Reverse the order of elements in an array. For example, A = [1,2,3,4,5,6], Output = [6,5,4,3,2,1]
@@ -38,6 +38,13 @@ class ReverseArrayElements {
 }
 
 fun main() {
+    /*
+    Test Cases
+    Edge Cases: empty array, null array
+    Base Cases: single element
+    Regular Case: 2 elements, 3 elements, odd elements, even elements
+     */
+
     val instance = ReverseArrayElements()
     var result: Array<Int>?
 

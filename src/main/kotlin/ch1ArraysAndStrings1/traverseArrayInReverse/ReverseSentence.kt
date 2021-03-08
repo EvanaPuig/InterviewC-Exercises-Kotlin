@@ -1,4 +1,4 @@
-package arraysAndStrings1.traverseArrayInReverse
+package ch1ArraysAndStrings1.traverseArrayInReverse
 
 import java.lang.StringBuilder
 

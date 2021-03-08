@@ -1,6 +1,4 @@
-package arraysAndStrings1.partitioningArrays
-
-import arraysAndStrings1.traverseFromBothEnds.SortedSubarray
+package ch1ArraysAndStrings1.partitioningArrays
 
 /*
 Given an array with n marbles colored Red, White or Blue, sort them so that marbles of the same color are adjacent, with the colors in the order Red, White and Blue.
@@ -24,6 +22,10 @@ class ThreeColorMarbles {
         BLUE(2);
     }
 
+    /*
+    Time Complexity: O(n)
+    Space Complexity: O(1)
+     */
     fun redWhiteBlue(a: Array<Int>?): Array<Int>? {
         if (a.isNullOrEmpty())
             return a
@@ -65,6 +67,13 @@ class ThreeColorMarbles {
 }
 
 fun main() {
+    /*
+    Test Cases
+    Edge Cases: empty array, null array, invalid color
+    Base Cases: single element, two elements
+    Regular Cases: list has element with - all 3 colors, only 2 colors, only 1 color
+     */
+
     val instance = ThreeColorMarbles()
     var result: Array<Int>?
 

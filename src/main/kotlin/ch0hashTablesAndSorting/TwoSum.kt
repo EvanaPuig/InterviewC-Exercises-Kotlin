@@ -1,4 +1,4 @@
-package hashTablesAndSorting
+package ch0hashTablesAndSorting
 
 /*
 Statement: Given an array of Integers, find a pair of integers that sums to a number target.
@@ -53,6 +53,11 @@ class TwoSum {
 }
 
 fun main() {
+    /*
+    Test Cases:
+    Edge Cases: empty array, null array
+    Base Cases: single element, two elements (pair-exists/not-exists) Regular Cases: more than 2 elements (pair-exists/not-exists)
+     */
     val instance = TwoSum()
     val result = 5
 

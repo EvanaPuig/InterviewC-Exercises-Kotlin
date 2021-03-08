@@ -1,4 +1,4 @@
-package arraysAndStrings1.partitioningArrays
+package ch1ArraysAndStrings1.partitioningArrays
 
 /*
 Statement: You are given an array of integers. Rearrange the array so that all zeroes are at the beginning of the array.
@@ -68,6 +68,12 @@ class ZeroesAtTheBeginning {
 }
 
 fun main() {
+    /*
+    Test Cases:
+    Edge Cases: Empty array, null array
+    Base Cases: one element (zero/non-zero)
+    Regular Cases: All zeroes, all non-zeroes, mix of zeroes and non-zeroes
+     */
     val instance = ZeroesAtTheBeginning()
     var result: Array<Int>?
 

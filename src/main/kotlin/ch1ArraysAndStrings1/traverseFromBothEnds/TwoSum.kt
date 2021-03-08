@@ -1,4 +1,4 @@
-package arraysAndStrings1.traverseFromBothEnds
+package ch1ArraysAndStrings1.traverseFromBothEnds
 
 /*
 Statement: Two Sum Problem - Find 2 numbers in a sorted array that sum to X.
@@ -43,6 +43,13 @@ class TwoSum {
 }
 
 fun main() {
+    /*
+    Test Cases:
+    Edge Case: empty array, single element
+    Base Case: 2 elements (with and w/o sum)
+    Regular Case: 3 elements, 4 elements (with and w/o sum and duplicates)
+     */
+
     val instance = TwoSum()
     val result = 5
 
