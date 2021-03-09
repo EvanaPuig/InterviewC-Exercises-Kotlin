@@ -54,7 +54,6 @@ class ThreeColorMarbles {
                 }
             }
         }
-
         return a
     }
 

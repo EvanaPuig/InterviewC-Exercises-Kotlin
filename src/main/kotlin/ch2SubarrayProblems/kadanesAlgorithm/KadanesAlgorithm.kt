@@ -34,7 +34,7 @@ class KadanesAlgorithm {
 
         for (i in a.indices) {
             var sum = 0
-            for ( j in i until a.size - 1) {
+            for ( j in i until a.size) {
                 sum += a[j]
                 maxSum = max(maxSum, sum)
             }
@@ -52,7 +52,15 @@ class KadanesAlgorithm {
         if (a.isNullOrEmpty())
             return null
 
-        return 0
+        var maxSum = a[0]
+        var maxEndingHere = a[0]
+
+        for (i in 1 until a.size) {
+            maxEndingHere = max(maxEndingHere + a[i], a[i])
+            maxSum = max(maxSum, maxEndingHere)
+        }
+
+        return maxSum
     }
 }
 
