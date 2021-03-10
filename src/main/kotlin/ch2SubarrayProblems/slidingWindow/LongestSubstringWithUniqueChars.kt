@@ -49,9 +49,8 @@ class LongestSubstringWithUniqueChars {
             // expand end pointer
             end++
             val charToAdd = charArray[end]
-            if (map.containsKey(charToAdd) && map[charToAdd]!! >= start) {
+            if (map.containsKey(charToAdd) && map[charToAdd]!! >= start)
                 start = map[charToAdd]!!.plus(1)
-            }
             map[charToAdd] = end
 
             // update result
