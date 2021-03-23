@@ -45,7 +45,6 @@ class ArrayOfSquares {
             }
             resultIndex--
         }
-
         return result.toTypedArray()
     }
 }

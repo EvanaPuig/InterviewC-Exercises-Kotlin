@@ -72,7 +72,7 @@ fun main() {
     Test Cases:
     Edge Cases: Empty array, null array
     Base Cases: one element (zero/non-zero)
-    Regular Cases: All zeroes, all non-zeroes, mix of zeroes and non-zeroes
+    Regular Cases: All zeroes, all non-zeroes, mix of zeroes and non-zeroesfdrrtfghy
      */
     val instance = ZeroesAtTheBeginning()
     var result: Array<Int>?

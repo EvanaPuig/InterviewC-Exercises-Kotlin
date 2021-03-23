@@ -24,8 +24,8 @@ class TwoSum {
         if (a.isNullOrEmpty())
             return null
 
-        for ( i in a.indices - 1) {
-            for(j in a.indices) {
+        for ( i in 0..(a.size - 2)) {
+            for(j in 1 until a.size) {
                 if( a[i] + a[j] == target)
                     return Pair(a[i], a[j])
             }

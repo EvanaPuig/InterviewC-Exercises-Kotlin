@@ -41,8 +41,8 @@ class ContiguousSubarrayThatSumsToX {
             if (sum == target)
                 return Pair(0, i)
 
-            if (map.containsKey(sum - target))
-                return Pair(map[sum-target]!!.plus(1), i)
+            if (map.containsKey(sum))
+                return Pair(map[sum]!!.plus(1), i)
 
             map[sum] = i
         }
