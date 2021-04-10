@@ -1,6 +1,8 @@
 package ch2SubarrayProblems.slidingWindow
 
 /*
+Problem 14
+
 Given an array of positive integers, find a subarray that sums to a given number X.
 For e.g, input = [1,2,3,5,2] and X=8, Result = [3,5] (indexes 2,3)
 Level: Medium
@@ -39,17 +41,14 @@ class SubarrayThatSumsToX {
         var start = 0
         var end = 0
         var sum = a[0]
-
         while(start < a.size) {
             if (start < end) {
                 end = start
                 sum = a[start]
             }
-
             if (sum < x) {
                 if (end == a.size - 1)
                     break
-
                 end++
                 sum += a[end]
             } else if (sum > x) {
@@ -59,7 +58,6 @@ class SubarrayThatSumsToX {
                 return Pair(start, end)
             }
         }
-
         return null
     }
 }

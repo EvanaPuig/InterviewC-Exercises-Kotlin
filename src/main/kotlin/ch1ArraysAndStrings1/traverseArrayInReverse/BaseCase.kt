@@ -22,15 +22,14 @@ class BaseCase {
             return a
 
         var end = a.size
-        var lastNumberIndex = getLastNumberIndex(a)
+        var lastNumIndex = getLastNumberIndex(a)
 
-        while (lastNumberIndex >= 0) {
-            if ( a[lastNumberIndex] % 2 == 0)
-                a[--end] = a[lastNumberIndex]
-            a[--end] = a[lastNumberIndex]
-            lastNumberIndex--
+        while (lastNumIndex >= 0) {
+            if ( a[lastNumIndex] % 2 == 0)
+                a[--end] = a[lastNumIndex]
+            a[--end] = a[lastNumIndex]
+            lastNumIndex--
         }
-
         return a
     }
 

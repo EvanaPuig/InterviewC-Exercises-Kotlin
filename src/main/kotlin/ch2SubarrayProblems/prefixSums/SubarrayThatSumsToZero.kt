@@ -1,6 +1,8 @@
 package ch2SubarrayProblems.prefixSums
 
 /*
+Problem 15
+
 Given an array of integers, both -ve and +ve, find a contiguous subarray that sums to 0.
 For example: [2,4,-2,1,-3,5,-3] --> [4,-2,1,-3]
 
@@ -35,16 +37,13 @@ class SubarrayThatSumsToZero {
 
         for (i in a.indices) {
             sum += a[i]
-
             if (sum == 0)
                 return Pair(0, i)
 
             if (map.containsKey(sum))
                 return Pair(map[sum]!!.plus(1), i)
-
             map[sum] = i
         }
-
         return null
     }
 }

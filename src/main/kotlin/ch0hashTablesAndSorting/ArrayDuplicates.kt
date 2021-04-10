@@ -9,7 +9,7 @@ class ArrayDuplicates {
     // Brute force
     // O(1) space
     // O(n^2) time
-    fun findArrayDuplicates(a: Array<Int>?): Int? {
+    fun findArrayDuplicatesBruteForce(a: Array<Int>?): Int? {
         if (a.isNullOrEmpty())
             return null
 
@@ -40,18 +40,17 @@ class ArrayDuplicates {
     // HashTable
     // O(n) space * tradeoff *
     // O(n) time * Optimal *
-    fun findArrayDuplicatesHashTable(a: Array<Int>?): Int? {
+    fun findArrayDuplicatesHashSet(a: Array<Int>?): Int? {
         if (a.isNullOrEmpty())
             return null
 
-        val hashMap = hashSetOf<Int>()
+        val hashSet = hashSetOf<Int>()
 
         for (item in a) {
-            if (hashMap.contains(item))
+            if (hashSet.contains(item))
                 return item
-            hashMap.add(item)
+            hashSet.add(item)
         }
-
         return null
     }
 }
@@ -63,37 +62,37 @@ fun main() {
     // 1. Empty Array
     val emptyArraySample = arrayOf<Int>()
 
-    println("Brute Force Empty array: ${instance.findArrayDuplicates(emptyArraySample)}")
+    println("Brute Force Empty array: ${instance.findArrayDuplicatesBruteForce(emptyArraySample)}")
 
     // 2. Null array
     val nullArraySample = null
 
-    println("Brute Force Null array: ${instance.findArrayDuplicates(nullArraySample)}")
+    println("Brute Force Null array: ${instance.findArrayDuplicatesBruteForce(nullArraySample)}")
 
     // 3. Single Element
     val singleElementArraySample = arrayOf(5)
 
-    println("Brute Force Single array: ${instance.findArrayDuplicates(singleElementArraySample)}")
+    println("Brute Force Single array: ${instance.findArrayDuplicatesBruteForce(singleElementArraySample)}")
 
     // 4. Two elements Different
     val twoElementsArrayDifferentSample = arrayOf(5, 2)
 
-    println("Brute Force Two elements different array: ${instance.findArrayDuplicates(twoElementsArrayDifferentSample)}")
+    println("Brute Force Two elements different array: ${instance.findArrayDuplicatesBruteForce(twoElementsArrayDifferentSample)}")
 
     // 5. Two elements Same
     val twoElementsArraySameSample = arrayOf(5, 5)
 
-    println("Brute Force Two elements same array: ${instance.findArrayDuplicates(twoElementsArraySameSample)}")
+    println("Brute Force Two elements same array: ${instance.findArrayDuplicatesBruteForce(twoElementsArraySameSample)}")
 
     // 6. Regular Case with duplicates
     val sample1 = arrayOf(7, 5, 2, 1, 0, 2, 3, 5)
 
-    println("Brute Force Regular Case with duplicates: ${instance.findArrayDuplicates(sample1)}")
+    println("Brute Force Regular Case with duplicates: ${instance.findArrayDuplicatesBruteForce(sample1)}")
 
     // 7. Regular Case without duplicates
     val sample2 = arrayOf(7, 5, 2, 1, 0, 3, 4)
 
-    println("Brute Force Regular Case without duplicates: ${instance.findArrayDuplicates(sample2)}")
+    println("Brute Force Regular Case without duplicates: ${instance.findArrayDuplicatesBruteForce(sample2)}")
 
 
 
@@ -121,23 +120,23 @@ fun main() {
 
     // Hash table Test Cases:
     // 1. Empty Array
-    println("Hash table Empty array: ${ArrayDuplicates().findArrayDuplicatesHashTable(emptyArraySample)}")
+    println("Hash table Empty array: ${ArrayDuplicates().findArrayDuplicatesHashSet(emptyArraySample)}")
 
     // 2. Null array
-    println("Hash table Null array: ${ArrayDuplicates().findArrayDuplicatesHashTable(nullArraySample)}")
+    println("Hash table Null array: ${ArrayDuplicates().findArrayDuplicatesHashSet(nullArraySample)}")
 
     // 3. Single Element
-    println("Hash table Single array: ${ArrayDuplicates().findArrayDuplicatesHashTable(singleElementArraySample)}")
+    println("Hash table Single array: ${ArrayDuplicates().findArrayDuplicatesHashSet(singleElementArraySample)}")
 
     // 4. Two elements
-    println("Hash Table Two elements different array: ${ArrayDuplicates().findArrayDuplicatesHashTable(twoElementsArrayDifferentSample)}")
+    println("Hash Table Two elements different array: ${ArrayDuplicates().findArrayDuplicatesHashSet(twoElementsArrayDifferentSample)}")
 
     // 5. Two elements Same
-    println("Hash Table Two elements same array: ${ArrayDuplicates().findArrayDuplicatesHashTable(twoElementsArraySameSample)}")
+    println("Hash Table Two elements same array: ${ArrayDuplicates().findArrayDuplicatesHashSet(twoElementsArraySameSample)}")
 
     // 6. Regular Case 1
-    println("Hash Table Regular Case with duplicates: ${ArrayDuplicates().findArrayDuplicatesHashTable(sample1)}")
+    println("Hash Table Regular Case with duplicates: ${ArrayDuplicates().findArrayDuplicatesHashSet(sample1)}")
 
     // 7. Regular Case 2
-    println("Hash Table Regular Case without duplicates: ${ArrayDuplicates().findArrayDuplicatesHashTable(sample2)}")
+    println("Hash Table Regular Case without duplicates: ${ArrayDuplicates().findArrayDuplicatesHashSet(sample2)}")
 }

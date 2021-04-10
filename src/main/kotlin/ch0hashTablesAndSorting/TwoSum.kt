@@ -36,7 +36,7 @@ class TwoSum {
     // Hash table
     // O(n) time * Optimal *
     // O(n) space * tradeoff *
-    fun twoSumHashTable(a: Array<Int>?, target: Int) : Pair<Int, Int>? {
+    fun twoSumHashSet(a: Array<Int>?, target: Int) : Pair<Int, Int>? {
         if (a.isNullOrEmpty())
             return null
 
@@ -47,7 +47,6 @@ class TwoSum {
                 return Pair(target - a[i], a[i])
             hashSet.add(a[i])
         }
-
         return null
     }
 }
@@ -92,22 +91,22 @@ fun main() {
 
     // Hash table Cases:
     // 1. Empty array
-    println("Hash Table Empty array: ${instance.twoSumHashTable(emptyArraySample, result)}")
+    println("Hash Table Empty array: ${instance.twoSumHashSet(emptyArraySample, result)}")
 
     // 2. Null array
-    println("Hash Table Null array: ${instance.twoSumHashTable(nullArraySample, result)}")
+    println("Hash Table Null array: ${instance.twoSumHashSet(nullArraySample, result)}")
 
     // 3. Array with one element
-    println("Hash Table Single array: ${instance.twoSumHashTable(singleElementArraySample, result)}")
+    println("Hash Table Single array: ${instance.twoSumHashSet(singleElementArraySample, result)}")
 
     // 4. Array with two elements that sum result
-    println("Hash Table Two elements different array: ${instance.twoSumHashTable(twoElementsArrayThatSum, result)}")
+    println("Hash Table Two elements different array: ${instance.twoSumHashSet(twoElementsArrayThatSum, result)}")
 
     // 5. Array with two elements that don't sum result
-    println("Hash Table Two elements same array: ${instance.twoSumHashTable(twoElementsArrayThatDontSum, result)}")
+    println("Hash Table Two elements same array: ${instance.twoSumHashSet(twoElementsArrayThatDontSum, result)}")
 
     // 6. Array with many elements that sum result
-    println("Hash Table Force Regular Case that sums: ${instance.twoSumHashTable(sample1, result)}")
+    println("Hash Table Force Regular Case that sums: ${instance.twoSumHashSet(sample1, result)}")
 
     // 7. Array with many elements that don't sum result
     println("Hash Table Regular Case that doesn't sum: ${instance.twoSumBruteForce(sample2, result)}")
