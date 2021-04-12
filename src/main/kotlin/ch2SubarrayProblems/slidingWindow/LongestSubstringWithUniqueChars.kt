@@ -31,21 +31,19 @@ class LongestSubstringWithUniqueChars {
     Space Complexity: O(size of character set), which is typically a fixed number, so O(1)
      */
 
-    fun allUnique(input: String?): Pair<Int, Int>? {
-        if (input.isNullOrEmpty())
+    fun allUnique(s: String?): Pair<Int, Int>? {
+        if (s.isNullOrEmpty())
             return null
 
         val map = hashMapOf<Char, Int>()
-        var resultFirst = 0
-        var resultSecond = 0
         var start = 0
         var end = 0
         var longest = 1
 
-        val charArray = input.toCharArray()
+        val charArray = s.toCharArray()
         map[charArray[0]] = 0
 
-        while (end < input.length - 1) {
+        while (end < s.length - 1) {
             // expand end pointer
             end++
             val charToAdd = charArray[end]
@@ -54,14 +52,11 @@ class LongestSubstringWithUniqueChars {
             map[charToAdd] = end
 
             // update result
-            if (end - start + 1 > longest) {
+            if (end - start + 1 > longest)
                 longest = end - start + 1
-                resultFirst = start
-                resultSecond = end
-            }
         }
 
-        return Pair(resultFirst, resultSecond)
+        return Pair(start, end)
     }
 }
 
