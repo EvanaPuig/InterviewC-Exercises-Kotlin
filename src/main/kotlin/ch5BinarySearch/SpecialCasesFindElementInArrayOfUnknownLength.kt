@@ -18,6 +18,11 @@ Questions to Clarify:
  */
 
 class SpecialCasesFindElementInArrayOfUnknownLength {
+    /*
+    Time Complexity: O(log(n))
+    Space Complexity: O(1)
+     */
+
     fun findWithUnknownLength(a: Array<Int>?, target: Int): Int? {
         if (a.isNullOrEmpty())
             return -1
