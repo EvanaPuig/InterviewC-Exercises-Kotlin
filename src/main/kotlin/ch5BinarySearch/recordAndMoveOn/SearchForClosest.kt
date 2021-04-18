@@ -1,4 +1,4 @@
-package ch5BinarySearch
+package ch5BinarySearch.recordAndMoveOn
 
 import kotlin.math.abs
 
