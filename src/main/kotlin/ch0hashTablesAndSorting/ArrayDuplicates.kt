@@ -1,6 +1,8 @@
 package ch0hashTablesAndSorting
 
 /*
+Question 1
+
 Find duplicates in an Array of Integers
 Level: Easy
  */

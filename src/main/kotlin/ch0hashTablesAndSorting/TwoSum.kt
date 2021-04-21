@@ -1,6 +1,8 @@
 package ch0hashTablesAndSorting
 
 /*
+Question 2
+
 Statement: Given an array of Integers, find a pair of integers that sums to a number target.
 Example: If A = [6,3,5,2,1,7], target = 4, Result = [3,1]
 Level: Easy
