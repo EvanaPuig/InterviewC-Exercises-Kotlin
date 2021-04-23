@@ -1,6 +1,8 @@
 package ch1ArraysAndStrings1.traverseFromBothEnds
 
 /*
+Question 6
+
 Statement: Two Sum Problem - Find 2 numbers in a sorted array that sum to X.
 For example, if  A = [1,2,3,4,5] and X= 9, the numbers are 4 and 5.
 Level: Easy

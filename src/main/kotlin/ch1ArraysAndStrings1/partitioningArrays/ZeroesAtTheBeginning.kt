@@ -1,6 +1,8 @@
 package ch1ArraysAndStrings1.partitioningArrays
 
 /*
+Question 7
+
 Statement: You are given an array of integers. Rearrange the array so that all zeroes are at the beginning of the array.
 For example, [4,2,0,1,0,3,0] -> [0,0,0,4,1,2,3]
 Level: Easy
