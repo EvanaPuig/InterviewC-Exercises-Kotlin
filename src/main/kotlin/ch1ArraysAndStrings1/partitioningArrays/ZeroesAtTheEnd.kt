@@ -1,6 +1,8 @@
 package ch1ArraysAndStrings1.partitioningArrays
 
 /*
+Question 8
+
 Statement: given an array of integers. Rearrange the array so that all zeroes are at the end of the array.
 For example, [4,2,0,1,0,3,0] -> [4,1,2,3,0,0,0]
 Level: Easy
