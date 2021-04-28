@@ -1,7 +1,7 @@
 package ch2SubarrayProblems.prefixSums
 
 /*
-Problem 15
+Question 15
 
 Given an array of integers, both -ve and +ve, find a contiguous subarray that sums to 0.
 For example: [2,4,-2,1,-3,5,-3] --> [4,-2,1,-3]

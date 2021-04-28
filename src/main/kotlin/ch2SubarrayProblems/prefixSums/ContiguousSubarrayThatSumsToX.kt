@@ -1,8 +1,8 @@
 package ch2SubarrayProblems.prefixSums
 
-import ch2SubarrayProblems.slidingWindow.SubarrayThatSumsToX
-
 /*
+Question 17
+
 Given an array of integers, both -ve and +ve, find a contiguous subarray that sums to a number X.
 For example: [2,4,-2,1,-3,5,-3], X = 5 --> Result = [2,4,-2,1]
 Level: Medium
