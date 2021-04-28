@@ -36,7 +36,6 @@ class ReverseSentence {
             if (s[i] == ' ') {
                 if (builder.isNotEmpty()) // not empty, add a space
                     builder.append(' ')
-
                 builder.append(s.substring(i + 1, currentWordEnd))
                 currentWordEnd = i
             }

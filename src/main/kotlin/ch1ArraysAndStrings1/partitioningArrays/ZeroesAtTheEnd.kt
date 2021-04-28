@@ -32,7 +32,6 @@ class ZeroesAtTheEnd {
                 boundary--
             }
         }
-
         return a
     }
 

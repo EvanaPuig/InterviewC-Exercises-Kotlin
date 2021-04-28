@@ -3,7 +3,7 @@ package ch2SubarrayProblems.kadanesAlgorithm
 import kotlin.math.max
 
 /*
-Problem 13
+Question 13
 
 Given an array of integers that can be both +ve and -ve, find the contiguous subarray with the largest sum.
 For example: [1,2,-1,2,-3,2,-5] -> first 4 elements have the largest sum. Return (0,3)
@@ -41,7 +41,6 @@ class KadanesAlgorithm {
                 maxSum = max(maxSum, sum)
             }
         }
-
         return maxSum
     }
 
@@ -49,7 +48,6 @@ class KadanesAlgorithm {
     Time complexity: O(n)
     Space complexity: O(1)
      */
-
     fun maxSumSubarrayKadanesAlgorithm(a: Array<Int>?): Int?  {
         if (a.isNullOrEmpty())
             return null
@@ -61,7 +59,6 @@ class KadanesAlgorithm {
             maxEndingHere = max(maxEndingHere + a[i], a[i])
             maxSum = max(maxSum, maxEndingHere)
         }
-
         return maxSum
     }
 }
