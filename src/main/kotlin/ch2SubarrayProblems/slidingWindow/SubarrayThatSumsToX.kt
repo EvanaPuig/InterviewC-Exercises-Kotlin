@@ -42,7 +42,7 @@ class SubarrayThatSumsToX {
         var end = 0
         var sum = a[0]
         while(start < a.size) {
-            if (start < end) {
+            if (start > end) {
                 end = start
                 sum = a[start]
             }
