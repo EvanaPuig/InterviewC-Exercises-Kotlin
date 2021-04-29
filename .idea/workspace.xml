@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9fda01aa-61c5-4708-bb29-638ac4cb77de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ch2SubarrayProblems/slidingWindow/SubarrayThatSumsToX.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ch2SubarrayProblems/slidingWindow/SubarrayThatSumsToX.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ch5BinarySearch/implementation/SearchSortedArray.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ch5BinarySearch/implementation/SearchSortedArray.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619624273499</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Code improvements">
+      <created>1619641384630</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619641384630</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -93,7 +100,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixing kotlin errors" />
     <MESSAGE value="Numbering more questions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Numbering more questions" />
+    <MESSAGE value="Code improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code improvements" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

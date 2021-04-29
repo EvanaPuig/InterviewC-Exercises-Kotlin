@@ -1,7 +1,7 @@
 package ch5BinarySearch.bSWithDuplicates
 
 /*
-Problem 19
+Question 19
 
 Given a sorted array with duplicates, search for the first appearance of a target item.
 Level: Easy

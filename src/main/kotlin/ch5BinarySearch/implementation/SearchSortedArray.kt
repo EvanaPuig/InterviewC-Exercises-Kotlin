@@ -1,7 +1,7 @@
 package ch5BinarySearch.implementation
 
 /*
-Problem 18
+Question 18
 
 Given a sorted array, search for a target item.
 Level: Easy
