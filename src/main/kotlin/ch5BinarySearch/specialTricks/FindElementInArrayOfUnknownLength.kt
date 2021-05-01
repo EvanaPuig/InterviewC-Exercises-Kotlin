@@ -1,7 +1,7 @@
 package ch5BinarySearch.specialTricks
 
 /*
-Problem 22
+Question 22
 You are given an array, but you don’t know the length.
 Write a program to find a target element in the array.
 Level: Medium

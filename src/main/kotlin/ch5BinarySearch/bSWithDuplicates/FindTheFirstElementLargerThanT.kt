@@ -1,7 +1,7 @@
 package ch5BinarySearch.bSWithDuplicates
 
 /*
-Problem 23
+Question 23
 
 We can distill this problem to a more concrete version:
 “Given an array A and target T, Find the first element larger than T”

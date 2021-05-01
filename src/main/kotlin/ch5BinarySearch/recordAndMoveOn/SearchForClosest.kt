@@ -50,7 +50,6 @@ class SearchForClosest {
     private fun record(a: Array<Int>, mid: Int, result: Int?, target: Int): Int{
         if (result == null || abs(a[mid] - target) < abs(a[result] - target))
                     return mid
-
         return result
     }
 }
