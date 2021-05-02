@@ -1,8 +1,9 @@
 package ch5BinarySearch.specialTricks
 
-import kotlin.math.sqrt
 
 /*
+Question 24
+
 Find the square root of an integer X. For example, squareRoot(4) = 2. It is ok to find the integer floor of the square root. So squareRoot(5) or squareRoot(8) can also return 2. squareRoot(9) will return 3.
 
 Using Binary Search, you can search for square roots over the integer space. This is pretty fast because it takes O(log(n)) time. Assume that x*x is less than the integer limit.

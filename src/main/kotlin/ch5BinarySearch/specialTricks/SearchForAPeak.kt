@@ -1,6 +1,8 @@
 package ch5BinarySearch.specialTricks
 
 /*
+Question 25
+
 Level: MediumA peak element in an array A is an A[i] where its neighboring elements are less than A[i].
 So, A[i - 1] < A[i] and A[i + 1] < A[i].
 

@@ -23,7 +23,7 @@ class SpecialCasesFindElementInArrayOfUnknownLength {
     Space Complexity: O(1)
      */
 
-    fun findWithUnknownLength(a: Array<Int>?, target: Int): Int? {
+    fun findWithUnknownLength(a: Array<Int>?, target: Int): Int  {
         if (a.isNullOrEmpty())
             return -1
 
@@ -36,15 +36,15 @@ class SpecialCasesFindElementInArrayOfUnknownLength {
             try {
                 a[high]
             } catch (e: IndexOutOfBoundsException) {
-                lastIndex = binarySearchForLastIndex(a, high/2, high)
+                lastIndex = bSForLastIndex(a, high/2, high)
                 break
             }
             high *= 2
         }
-        return binarySearchOverRange(a, target, 0, lastIndex)
+        return bSOverRange(a, target, lastIndex)
     }
 
-    private fun binarySearchForLastIndex(a: Array<Int>, low: Int, high: Int): Int {
+    private fun bSForLastIndex(a: Array<Int>, low: Int, high: Int): Int {
         var localHigh = high
         var localLow = low
         while (localLow <= localHigh) {
@@ -56,22 +56,20 @@ class SpecialCasesFindElementInArrayOfUnknownLength {
                 localHigh = mid - 1
                 continue
             }
-
             try {
                 a[mid + 1]
             } catch (e: ArrayIndexOutOfBoundsException) {
                 // id + 1 is out of bounds, mid is last Index
                 return mid
             }
-
             // both mid and mid+1 are inside array, mid is not last index
             localLow = mid + 1
         }
         return -1 //this subarray does not have the end of the array
     }
 
-    private fun binarySearchOverRange(a: Array<Int>, target: Int, low: Int, high: Int): Int? {
-        var localLow = low
+    private fun bSOverRange(a: Array<Int>, target: Int, high: Int): Int {
+        var localLow = 0
         var localHigh = high
         while (localLow <= localHigh) {
             val mid = localLow + (localHigh - localLow) / 2
