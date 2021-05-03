@@ -3,7 +3,8 @@ package ch5BinarySearch.specialTricks
 /*
 Question 25
 
-Level: MediumA peak element in an array A is an A[i] where its neighboring elements are less than A[i].
+Level: Medium
+A peak element in an array A is an A[i] where its neighboring elements are less than A[i].
 So, A[i - 1] < A[i] and A[i + 1] < A[i].
 
 Assume there are no duplicates.
@@ -13,7 +14,7 @@ A = [1,3,4,5,2] => Peak = 5
 A = [5,3,1] => Peak = 5
 A = [1,3,5] => Peak = 5
 
-### Questions to Clarify:
+Questions to Clarify:
 	Q. Can there be negative numbers in the array
 	A. Yes, there can be both -ve and +ve numbers
 
@@ -26,9 +27,9 @@ A = [1,3,5] => Peak = 5
 
 class SearchForAPeak {
     /*
-    ### Complexity
-    Time Complexity: O(log(n))
-    Space Complexity: O(1)
+    Complexity
+        Time Complexity: O(log(n))
+        Space Complexity: O(1)
      */
     fun findPeak(a: Array<Int>?): Int {
         if (a.isNullOrEmpty())
