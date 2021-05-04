@@ -1,23 +1,24 @@
 package ch5BinarySearch.specialTricks
 
-
 /*
 Question 24
 
-Find the square root of an integer X. For example, squareRoot(4) = 2. It is ok to find the integer floor of the square root. So squareRoot(5) or squareRoot(8) can also return 2. squareRoot(9) will return 3.
+Find the square root of an integer X. For example, squareRoot(4) = 2.
+It is ok to find the integer floor of the square root. So squareRoot(5) or squareRoot(8) can also return 2. squareRoot(9) will return 3.
 
-Using Binary Search, you can search for square roots over the integer space. This is pretty fast because it takes O(log(n)) time. Assume that x*x is less than the integer limit.
+Using Binary Search, you can search for square roots over the integer space.
+This is pretty fast because it takes O(log(n)) time. Assume that x*x is less than the integer limit.
 
-### Level: Easy
+Level: Easy
 
-### Questions to Clarify:
+Questions to Clarify:
 	Q. Can the input be a negative number?
 	A. No, only positive numbers and zero.
 
  */
 class FindSquareRootOfX {
 /*
-### Complexity
+Complexity
 Time Complexity: O(log(X))
 Space Complexity: O(1)
  */
