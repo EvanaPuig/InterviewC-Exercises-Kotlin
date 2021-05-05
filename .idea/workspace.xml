@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fda01aa-61c5-4708-bb29-638ac4cb77de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/auxiliaryBuffer/CombinationsOfSizeX.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/fibonacci/Memoization.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ch5BinarySearch/specialTricks/FindSquareRootOfX.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ch5BinarySearch/specialTricks/FindSquareRootOfX.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/IntroToRecursionFibonacci.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/fibonacci/IntroToRecursionFibonacci.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,38 +55,73 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/Fibonacci" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Kotlin.CombinationsOfSizeXKt">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/Fibonacci" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MemoizationKt">
     <configuration name="CombinationsOfSizeXKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch6RecursionAndBacktracking.auxiliaryBuffer.CombinationsOfSizeXKt" />
       <module name="InterviewCamp.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ch6RecursionAndBacktracking.auxiliaryBuffer.CombinationsOfSizeXKt" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="FindElementInArrayOfUnknownLengthKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch5BinarySearch.specialTricks.FindElementInArrayOfUnknownLengthKt" />
       <module name="InterviewCamp.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ch5BinarySearch.specialTricks.FindElementInArrayOfUnknownLengthKt" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="IntroToRecursionFibonacciKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch6RecursionAndBacktracking.IntroToRecursionFibonacciKt" />
       <module name="InterviewCamp.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ch6RecursionAndBacktracking.IntroToRecursionFibonacciKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemoizationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="InterviewCamp.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ch6RecursionAndBacktracking.fibonacci.MemoizationKt" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.CombinationsOfSizeXKt" />
-        <item itemvalue="Kotlin.IntroToRecursionFibonacciKt" />
-        <item itemvalue="Kotlin.FindElementInArrayOfUnknownLengthKt" />
+        <item itemvalue="Application.MemoizationKt" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620068899674</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Adds combinations and permutations problem 1">
+      <created>1620156862240</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1620156862240</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,7 +213,8 @@
     <MESSAGE value="Formatting changes" />
     <MESSAGE value="Format fixes" />
     <MESSAGE value="Adds the recursion fibonacci implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds the recursion fibonacci implementation" />
+    <MESSAGE value="Adds combinations and permutations problem 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds combinations and permutations problem 1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

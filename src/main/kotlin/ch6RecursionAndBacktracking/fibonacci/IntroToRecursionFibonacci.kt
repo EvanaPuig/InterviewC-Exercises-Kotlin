@@ -1,4 +1,4 @@
-package ch6RecursionAndBacktracking
+package ch6RecursionAndBacktracking.fibonacci
 
 /*
 Question 26
