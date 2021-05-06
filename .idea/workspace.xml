@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fda01aa-61c5-4708-bb29-638ac4cb77de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/fibonacci/Memoization.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/auxiliaryBuffer/PhoneNumberMnemonics.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/IntroToRecursionFibonacci.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/fibonacci/IntroToRecursionFibonacci.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,7 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/Fibonacci" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MemoizationKt">
+  <component name="RunManager" selected="Application.PhoneNumberMnemonicsKt">
     <configuration name="CombinationsOfSizeXKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="InterviewCamp.main" />
       <option name="VM_PARAMETERS" />
@@ -119,8 +118,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PhoneNumberMnemonicsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="InterviewCamp.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ch6RecursionAndBacktracking.auxiliaryBuffer.PhoneNumberMnemonicsKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PhoneNumberMnemonicsKt" />
         <item itemvalue="Application.MemoizationKt" />
       </list>
     </recent_temporary>
@@ -190,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620156862240</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Adds the memoization version of fibonacci">
+      <created>1620252028822</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1620252028822</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,7 +234,8 @@
     <MESSAGE value="Format fixes" />
     <MESSAGE value="Adds the recursion fibonacci implementation" />
     <MESSAGE value="Adds combinations and permutations problem 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds combinations and permutations problem 1" />
+    <MESSAGE value="Adds the memoization version of fibonacci" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds the memoization version of fibonacci" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
