@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fda01aa-61c5-4708-bb29-638ac4cb77de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/auxiliaryBuffer/PhoneNumberMnemonics.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/auxiliaryBuffer/SubsetsOfArray.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/Fibonacci" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/auxiliaryBuffer" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -62,23 +62,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/auxiliaryBuffer" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/Fibonacci" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PhoneNumberMnemonicsKt">
-    <configuration name="CombinationsOfSizeXKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="InterviewCamp.main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="ch6RecursionAndBacktracking.auxiliaryBuffer.CombinationsOfSizeXKt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.SubsetsOfArrayKt">
     <configuration name="FindElementInArrayOfUnknownLengthKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="InterviewCamp.main" />
       <option name="VM_PARAMETERS" />
@@ -131,8 +119,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SubsetsOfArrayKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="InterviewCamp.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ch6RecursionAndBacktracking.auxiliaryBuffer.SubsetsOfArrayKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SubsetsOfArrayKt" />
         <item itemvalue="Application.PhoneNumberMnemonicsKt" />
         <item itemvalue="Application.MemoizationKt" />
       </list>
@@ -210,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620252028822</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Adds the phone number mnemonics problem">
+      <created>1620332363668</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1620332363668</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,7 +244,8 @@
     <MESSAGE value="Adds the recursion fibonacci implementation" />
     <MESSAGE value="Adds combinations and permutations problem 1" />
     <MESSAGE value="Adds the memoization version of fibonacci" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds the memoization version of fibonacci" />
+    <MESSAGE value="Adds the phone number mnemonics problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds the phone number mnemonics problem" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
