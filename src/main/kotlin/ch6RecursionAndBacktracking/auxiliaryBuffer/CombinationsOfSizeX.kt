@@ -39,7 +39,7 @@ class CombinationsOfSizeX {
     }
 
     private fun printCombosHelper(a: Array<Int>, buffer: Array<Int?>, startIndex: Int, bufferIndex: Int){
-        // termination cases - buffer full
+        // 1. termination cases - buffer full
         if (bufferIndex == buffer.size) {
             printArray(buffer)
             return
@@ -47,12 +47,12 @@ class CombinationsOfSizeX {
         if (startIndex == a.size)
             return
 
-        // find candidates that go into current buffer index
+        // 2. find candidates that go into current buffer index
         for (i in startIndex until a.size) {
-            // place item into buffer
+            // 3. place item into buffer
             buffer[bufferIndex] = a[i]
 
-            // recurse to next buffer index
+            // 4. recurse to next buffer index
             printCombosHelper(a, buffer, i+1, bufferIndex + 1)
         }
     }

@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fda01aa-61c5-4708-bb29-638ac4cb77de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/auxiliaryBuffer/SubsetsOfArray.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/auxiliaryBuffer/Permutations.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/auxiliaryBuffer/CombinationsOfSizeX.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/auxiliaryBuffer/CombinationsOfSizeX.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/auxiliaryBuffer/SubsetsOfArray.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/auxiliaryBuffer/SubsetsOfArray.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,28 +68,15 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/Fibonacci" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SubsetsOfArrayKt">
-    <configuration name="FindElementInArrayOfUnknownLengthKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.FindPathIn2DMatrixKt">
+    <configuration name="FindPathIn2DMatrixKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="InterviewCamp.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="ch5BinarySearch.specialTricks.FindElementInArrayOfUnknownLengthKt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IntroToRecursionFibonacciKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="InterviewCamp.main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="ch6RecursionAndBacktracking.IntroToRecursionFibonacciKt" />
+      <option name="MAIN_CLASS_NAME" value="ch6RecursionAndBacktracking.backtrackingSpaceship.FindPathIn2DMatrixKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,6 +90,19 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="ch6RecursionAndBacktracking.fibonacci.MemoizationKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PermutationsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="InterviewCamp.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ch6RecursionAndBacktracking.auxiliaryBuffer.PermutationsKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,6 +136,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FindPathIn2DMatrixKt" />
+        <item itemvalue="Application.PermutationsKt" />
         <item itemvalue="Application.SubsetsOfArrayKt" />
         <item itemvalue="Application.PhoneNumberMnemonicsKt" />
         <item itemvalue="Application.MemoizationKt" />
@@ -219,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620332363668</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Adds the print all subsets of array problem">
+      <created>1620406955542</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1620406955542</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,7 +256,18 @@
     <MESSAGE value="Adds combinations and permutations problem 1" />
     <MESSAGE value="Adds the memoization version of fibonacci" />
     <MESSAGE value="Adds the phone number mnemonics problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds the phone number mnemonics problem" />
+    <MESSAGE value="Adds the print all subsets of array problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds the print all subsets of array problem" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="8" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
