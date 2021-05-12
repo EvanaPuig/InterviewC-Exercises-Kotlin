@@ -1,4 +1,4 @@
-package ch6RecursionAndBacktracking.fibonacci
+package ch6RecursionAndBacktracking.introToRecursionAndMemoization
 
 /*
 Question 26
@@ -14,20 +14,31 @@ Statement:
 Questions to Clarify: N/A
  */
 
-class IntroToRecursionFibonacci {
+class Memoization {
     /*
     Complexity
-        Time Complexity: O(2^n)
+        Time Complexity: O(n)
         Space Complexity: O(n)
      */
 
     fun fibonacci(n: Int): Int {
-        return if (n == 1 || n == 2) 1 else fibonacci(n - 1) + fibonacci(n - 2)
+        return fibonacci(n, hashMapOf())
+    }
+
+    private fun fibonacci(n: Int, memo: HashMap<Int, Int>): Int {
+        if (n == 1 || n == 2)
+            return 1
+        if (memo.containsKey(n)) //lookup memo
+            return memo[n]!!
+
+        val result = fibonacci(n - 1, memo) + fibonacci(n - 2, memo)
+        memo[n] = result
+        return result
     }
 }
 
 fun main() {
-    val instance = IntroToRecursionFibonacci()
+    val instance = Memoization()
     println(instance.fibonacci(1))
 
     println(instance.fibonacci(2))

@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fda01aa-61c5-4708-bb29-638ac4cb77de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/auxiliaryBuffer/Permutations.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/auxiliaryBuffer/CombinationsOfSizeX.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/auxiliaryBuffer/CombinationsOfSizeX.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/auxiliaryBuffer/SubsetsOfArray.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/auxiliaryBuffer/SubsetsOfArray.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/fibonacci/IntroToRecursionFibonacci.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/introToRecursionAndMemoization/IntroToRecursionFibonacci.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/fibonacci/Memoization.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/introToRecursionAndMemoization/Memoization.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +67,20 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/Fibonacci" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FindPathIn2DMatrixKt">
+  <component name="RunManager" selected="Application.CalculateXPowerOfNKt">
+    <configuration name="CalculateXPowerOfNKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="InterviewCamp.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ch6RecursionAndBacktracking.introToRecursionAndMemoization.CalculateXPowerOfNKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FindPathIn2DMatrixKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="InterviewCamp.main" />
       <option name="VM_PARAMETERS" />
@@ -77,19 +89,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="ch6RecursionAndBacktracking.backtrackingSpaceship.FindPathIn2DMatrixKt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MemoizationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="InterviewCamp.main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="ch6RecursionAndBacktracking.fibonacci.MemoizationKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -136,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CalculateXPowerOfNKt" />
         <item itemvalue="Application.FindPathIn2DMatrixKt" />
         <item itemvalue="Application.PermutationsKt" />
         <item itemvalue="Application.SubsetsOfArrayKt" />
         <item itemvalue="Application.PhoneNumberMnemonicsKt" />
-        <item itemvalue="Application.MemoizationKt" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +229,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620406955542</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Adds the permutations problem">
+      <created>1620594922419</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1620594922419</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Adds the backtracking spaceship find maze path problem">
+      <created>1620594948732</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1620594948732</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,7 +270,9 @@
     <MESSAGE value="Adds the memoization version of fibonacci" />
     <MESSAGE value="Adds the phone number mnemonics problem" />
     <MESSAGE value="Adds the print all subsets of array problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds the print all subsets of array problem" />
+    <MESSAGE value="Adds the permutations problem" />
+    <MESSAGE value="Adds the backtracking spaceship find maze path problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds the backtracking spaceship find maze path problem" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
