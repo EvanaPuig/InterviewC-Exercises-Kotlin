@@ -1,10 +1,5 @@
 package ch6RecursionAndBacktracking.auxiliaryBuffer
 
-import ch5BinarySearch.specialTricks.SearchForAPeak
-import com.sun.xml.internal.fastinfoset.tools.PrintTable.printArray
-import com.sun.xml.internal.fastinfoset.util.StringArray
-import java.lang.StringBuilder
-
 /*
 Question 27
 
