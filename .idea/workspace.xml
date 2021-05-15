@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9fda01aa-61c5-4708-bb29-638ac4cb77de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/auxiliaryBuffer/CombinationsOfSizeX.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/auxiliaryBuffer/CombinationsOfSizeX.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/backtrackingSpaceship/FindPathIn2DMatrix.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/backtrackingSpaceship/FindPathIn2DMatrix.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/auxiliaryBuffer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/backtrackingSpaceship" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -62,11 +62,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/backtrackingSpaceship" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/auxiliaryBuffer" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/ch6RecursionAndBacktracking/Fibonacci" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CoinChangeProblemKt">
+  <component name="RunManager" selected="Application.SudokuSolverKt">
     <configuration name="CalculateXPowerOfNKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="InterviewCamp.main" />
       <option name="VM_PARAMETERS" />
@@ -119,14 +120,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubsetsOfArrayKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="SudokuSolverKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="InterviewCamp.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="ch6RecursionAndBacktracking.auxiliaryBuffer.SubsetsOfArrayKt" />
+      <option name="MAIN_CLASS_NAME" value="ch6RecursionAndBacktracking.backtrackingSpaceship.SudokuSolverKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SudokuSolverKt" />
+        <item itemvalue="Application.FindPathIn2DMatrixKt" />
         <item itemvalue="Application.CoinChangeProblemKt" />
         <item itemvalue="Application.CalculateXPowerOfNKt" />
-        <item itemvalue="Application.FindPathIn2DMatrixKt" />
         <item itemvalue="Application.PermutationsKt" />
-        <item itemvalue="Application.SubsetsOfArrayKt" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620842491672</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Coin Change Problem">
+      <created>1620844787018</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1620844787018</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,7 +287,8 @@
     <MESSAGE value="Adds the permutations problem" />
     <MESSAGE value="Adds the backtracking spaceship find maze path problem" />
     <MESSAGE value="Calculate Power of X problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Calculate Power of X problem" />
+    <MESSAGE value="Coin Change Problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Coin Change Problem" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
